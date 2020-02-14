@@ -53,6 +53,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 ROOT_URLCONF = 'tango_with_django_project.urls'
 
 TEMPLATES = [
@@ -105,6 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LOGIN_URL = 'rango:login'
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
