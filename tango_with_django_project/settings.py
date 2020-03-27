@@ -41,9 +41,21 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rango',
+    'registration',
 ]
 
+#If true, users can register
+REGISTRATION_OPEN = True
 
+#if true, user will be automatically logged in after registering
+REGISTRATION_AUTO_LOGIN = True
+
+#The URL that Django redirects users to after logging in
+LOGIN_REDIRECT_URL = 'rango:index'
+
+#the page users are directed to if they are not logged in
+#this was set in a previous chapter. The registration package uses this too
+LOGIN_URL = 'auth_login'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
